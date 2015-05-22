@@ -9,8 +9,8 @@ The project is about reading data collected from the accelerometers from the Sam
 
 This repo contains 3 files:
 
-- README.md  short descriprion of the repo and description of the algorithms, input and output of the transformations performed in the project
-- CodeBook.md detailed description of the variables used in the project  
+- README.md  short descriprion of the repo and transformation
+- CodeBook.md detailed description of the variables, algorithms, input and output of the transformations performed in the project 
 - run_analysis.R R script performing the analysis
 
 ## Input data
@@ -28,7 +28,14 @@ For each record it is provided:
 - An identifier of the subject who carried out the experiment.
 
 ## Output data
-The output file is called !!!!.txt and was created by write.table() command using row.name=FALSE option
+The output file is called tody_data.txt and was created by write.table() command using row.name=FALSE option
 The file contains the average values for all mean and standard deviation for each measurement grouped by activity type and subject
 
-## Transformation algorithm
+## Transformation performed
+
+ * Merges the training and the test sets to create one data set
+ * Extracts only the measurements on the mean and standard deviation for each measurement
+ * Uses descriptive activity names to name the activities in the data set
+ * Appropriately labels the data set with descriptive variable names. 
+ * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
