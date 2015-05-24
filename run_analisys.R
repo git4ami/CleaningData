@@ -1,4 +1,4 @@
-setwd('/home/ami/R/Projects/Fitbit/')
+##setwd('/home/ami/R/Projects/Fitbit/')
 library(plyr)
 
 ## Merges the training and the test sets to create one data set
